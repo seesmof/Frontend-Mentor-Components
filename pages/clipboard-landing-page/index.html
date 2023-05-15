@@ -13,6 +13,9 @@
     <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
     <style type="text/tailwindcss">
       @layer components {
+        .heading {
+          @apply md:font-bold  font-semibold text-zinc-600;
+        }
       }
     </style>
   </head>
@@ -21,10 +24,10 @@
       class="w-full bg-center bg-no-repeat bg-cover bg-[url('./img/bg-header-mobile.png')] md:bg-[url('./img/bg-header-desktop.png')]"
     >
       <div
-        class="text-zinc-600 container flex flex-col items-center justify-center max-w-4xl p-6 py-24 mx-auto text-center"
+        class="text-zinc-600 container flex flex-col items-center justify-center max-w-4xl p-6 py-20 mx-auto text-center"
       >
         <img src="./img/logo.svg" alt="logo image" class="object-cover" />
-        <h1 class="md:font-bold md:text-4xl pt-8 text-2xl font-semibold">
+        <h1 class="heading md:text-4xl pt-8 text-2xl">
           A history of everything you copy
         </h1>
         <p class="text-zinc-400 md:text-lg pt-4">
@@ -65,5 +68,55 @@
         </div>
       </div>
     </section>
+
+    <section class="w-full">
+      <div
+        class="container flex flex-col items-center justify-center max-w-4xl p-6 mx-auto text-center"
+      >
+        <header class="flex flex-col items-center justify-center">
+          <h2 class="heading md:text-4xl text-2xl">
+            Keep track of your snippets
+          </h2>
+          <p class="text-zinc-400 md:text-lg pt-4">
+            Clipboard instantly stores any item you copy in the cloud, meaning
+            you can access your snippets immediately on all your devices. Our
+            Mac and iOS apps will help you organize everything.
+          </p>
+        </header>
+      </div>
+    </section>
+    <div
+      class="md:flex-row lg:gap-12 md:gap-6 md:max-w-full flex flex-col items-center max-w-4xl p-6 pt-8 pb-24"
+    >
+      <img
+        src="./img/image-computer.png"
+        alt="image of a computer"
+        class="md:h-full md:-left-12 md:w-1/2 relative pb-8"
+      />
+      <div
+        class="md:text-left lg:gap-12 flex flex-col max-w-lg gap-6 text-center"
+      >
+        <div class="flex flex-col">
+          <h3 class="heading md:text-2xl text-xl">Quick Search</h3>
+          <p class="text-zinc-400 md:text-lg pt-2">
+            Easily search your snippets by content, category, web address,
+            application, and more.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <h3 class="heading md:text-2xl text-xl">iCloud Sync</h3>
+          <p class="text-zinc-400 md:text-lg pt-2">
+            Instantly saves and syncs snippets across all your devices.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <h3 class="heading md:text-2xl text-xl">Complete History</h3>
+          <p class="text-zinc-400 md:text-lg pt-2">
+            Retrieve any snippets from the first moment you started using the
+            app.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
