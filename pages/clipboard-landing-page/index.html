@@ -18,10 +18,10 @@
   </head>
   <body>
     <section
-      class="w-full bg-center bg-no-repeat bg-cover bg-[url('./img/bg-header-mobile.png')]"
+      class="w-full bg-center bg-no-repeat bg-cover bg-[url('./img/bg-header-mobile.png')] md:bg-[url('./img/bg-header-desktop.png')]"
     >
       <div
-        class="text-zinc-600 container flex flex-col items-center justify-center p-6 pt-24 mx-auto text-center"
+        class="text-zinc-600 container flex flex-col items-center justify-center max-w-4xl p-6 py-24 mx-auto text-center"
       >
         <img src="./img/logo.svg" alt="logo image" class="object-cover" />
         <h1 class="pt-8 text-2xl font-semibold">
@@ -31,9 +31,11 @@
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
-        <div class="flex flex-col w-full gap-5 pt-8">
+        <div
+          class="md:flex-row md:w-1/2 flex flex-col items-center w-full gap-5 pt-8"
+        >
           <!-- BUTTON CONTAINER -->
-          <div class="group relative">
+          <div class="group relative w-full">
             <a
               href="#"
               class="text-teal-50 bottom-1 group-hover:bottom-0 group-active:scale-95 relative block w-full py-2 font-semibold duration-500 bg-teal-500 rounded-full"
@@ -47,7 +49,7 @@
             </div>
           </div>
           <!-- BUTTON CONTAINER -->
-          <div class="group relative">
+          <div class="group relative w-full">
             <a
               href="#"
               class="text-indigo-50 bottom-1 group-hover:bottom-0 group-active:scale-95 relative block w-full py-2 font-semibold duration-500 bg-indigo-500 rounded-full"
@@ -55,7 +57,7 @@
               Download for iOS
             </a>
             <div
-              class="-z-10 group-active:scale-95 shadow-indigo-200 absolute top-0 w-full py-2 duration-500 bg-indigo-600 rounded-full shadow-2xl"
+              class="-z-10 group-active:scale-95 shadow-indigo-300 absolute top-0 w-full py-2 duration-500 bg-indigo-600 rounded-full shadow-2xl"
             >
               Download for Mac
             </div>
