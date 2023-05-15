@@ -24,6 +24,12 @@
         .card-image {
           @apply group-hover:scale-105 h-80 object-cover object-center w-full duration-1000;
         }
+        .card-overlay {
+          @apply bg-neutral-900 absolute top-0 bottom-0 left-0 right-0 flex items-end justify-center bg-opacity-50;
+        }
+        .card-container {
+          @apply bg-neutral-600 col-span-1 row-span-1 overflow-hidden rounded-md md:rounded-xl;
+        }
       }
     </style>
     <title>Projects Gallery</title>
@@ -80,9 +86,7 @@
           class="md:grid-cols-2 lg:gap-4 sm:px-4 grid grid-cols-1 gap-2 p-2"
         >
           <!-- box container -->
-          <div
-            class="bg-neutral-600 col-span-1 row-span-1 overflow-hidden rounded-md"
-          >
+          <div class="card-container">
             <div class="group relative">
               <a href="./pages/product-preview-card-component/index.html">
                 <!-- background image -->
@@ -92,9 +96,7 @@
                   class="card-image"
                 />
                 <!-- dark overlay -->
-                <div
-                  class="bg-neutral-900 absolute top-0 bottom-0 left-0 right-0 flex items-end justify-center bg-opacity-50"
-                >
+                <div class="card-overlay">
                   <!-- page info -->
                   <div class="card-info">
                     <h2 class="card-heading">product preview card</h2>
@@ -105,9 +107,7 @@
             </div>
           </div>
           <!-- box container -->
-          <div
-            class="bg-neutral-600 col-span-1 row-span-1 overflow-hidden rounded-md"
-          >
+          <div class="card-container">
             <div class="group relative">
               <a href="./pages/qr-code-component/index.html">
                 <!-- background image -->
@@ -117,9 +117,7 @@
                   class="card-image"
                 />
                 <!-- dark overlay -->
-                <div
-                  class="bg-neutral-900 absolute top-0 bottom-0 left-0 right-0 flex items-end justify-center bg-opacity-50"
-                >
+                <div class="card-overlay">
                   <!-- page info -->
                   <div class="card-info">
                     <h2 class="card-heading">qR code component</h2>
@@ -130,9 +128,7 @@
             </div>
           </div>
           <!-- box container -->
-          <div
-            class="bg-neutral-600 col-span-1 row-span-1 overflow-hidden rounded-md"
-          >
+          <div class="card-container">
             <div class="group relative">
               <a href="./pages/chat-app-css-illustration/index.html">
                 <!-- background image -->
@@ -142,9 +138,7 @@
                   class="card-image"
                 />
                 <!-- dark overlay -->
-                <div
-                  class="bg-neutral-900 absolute top-0 bottom-0 left-0 right-0 flex items-end justify-center bg-opacity-50"
-                >
+                <div class="card-overlay">
                   <!-- page info -->
                   <div class="card-info">
                     <h2 class="card-heading">chat app cSS illustration</h2>
@@ -155,9 +149,7 @@
             </div>
           </div>
           <!-- box container -->
-          <div
-            class="bg-neutral-600 col-span-1 row-span-1 overflow-hidden rounded-md"
-          >
+          <div class="card-container">
             <div class="group relative">
               <a href="./pages/testimonials-grid-section/index.html">
                 <!-- background image -->
@@ -167,9 +159,7 @@
                   class="card-image"
                 />
                 <!-- dark overlay -->
-                <div
-                  class="bg-neutral-900 absolute top-0 bottom-0 left-0 right-0 flex items-end justify-center bg-opacity-50"
-                >
+                <div class="card-overlay">
                   <!-- page info -->
                   <div class="card-info">
                     <h2 class="card-heading">testimonials grid section</h2>
@@ -180,9 +170,7 @@
             </div>
           </div>
           <!-- box container -->
-          <div
-            class="bg-neutral-600 col-span-1 row-span-1 overflow-hidden rounded-md"
-          >
+          <div class="card-container">
             <div class="group relative">
               <a href="./pages/fylo-data-storage-component/index.html">
                 <!-- background image -->
@@ -192,9 +180,7 @@
                   class="card-image"
                 />
                 <!-- dark overlay -->
-                <div
-                  class="bg-neutral-900 absolute top-0 bottom-0 left-0 right-0 flex items-end justify-center bg-opacity-50"
-                >
+                <div class="card-overlay">
                   <!-- page info -->
                   <div class="card-info">
                     <h2 class="card-heading">fylo data storage component</h2>
