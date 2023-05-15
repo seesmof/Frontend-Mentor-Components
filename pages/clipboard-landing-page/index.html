@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,7 +14,10 @@
     <style type="text/tailwindcss">
       @layer components {
         .heading {
-          @apply md:font-bold  font-semibold text-zinc-600;
+          @apply md:font-bold font-semibold text-zinc-600;
+        }
+        .footer-link {
+          @apply underline-offset-4 hover:underline capitalize font-medium;
         }
       }
     </style>
@@ -181,7 +184,7 @@
     </section>
 
     <section class="w-full">
-      <div class="container max-w-6xl p-6 pb-20 mx-auto text-center">
+      <div class="max-w-7xl container p-6 pb-20 mx-auto text-center">
         <div
           class="lg:flex-row lg:justify-between flex flex-col items-center justify-center gap-12"
         >
@@ -197,6 +200,92 @@
             src="./img/logo-vector-graphics.png"
             alt="vector graphics logo"
             class="max-w-xs"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full">
+      <div
+        class="container flex flex-col items-center justify-center max-w-4xl p-6 pb-20 mx-auto text-center"
+      >
+        <h2 class="heading md:text-4xl pt-8 text-2xl">
+          Clipboard for iOS and Mac OS
+        </h2>
+        <p class="text-zinc-400 md:text-lg pt-4">
+          Available for free on the App Store. Download for Mac or iOS, sync
+          with iCould and you're ready to start adding to your clipboard.
+        </p>
+        <div
+          class="md:flex-row md:w-1/2 flex flex-col items-center w-full gap-5 pt-8"
+        >
+          <!-- BUTTON CONTAINER -->
+          <div class="group relative w-full">
+            <a
+              href="#"
+              class="text-teal-50 bottom-1 group-hover:bottom-0 group-active:scale-95 relative block w-full py-2 font-semibold duration-500 bg-teal-500 rounded-full"
+            >
+              Download for iOS
+            </a>
+            <div
+              class="-z-10 group-active:scale-95 shadow-teal-200 absolute top-0 w-full py-2 duration-500 bg-teal-600 rounded-full shadow-2xl"
+            >
+              Download for iOS
+            </div>
+          </div>
+          <!-- BUTTON CONTAINER -->
+          <div class="group relative w-full">
+            <a
+              href="#"
+              class="text-indigo-50 bottom-1 group-hover:bottom-0 group-active:scale-95 relative block w-full py-2 font-semibold duration-500 bg-indigo-500 rounded-full"
+            >
+              Download for iOS
+            </a>
+            <div
+              class="-z-10 group-active:scale-95 shadow-indigo-300 absolute top-0 w-full py-2 duration-500 bg-indigo-600 rounded-full shadow-2xl"
+            >
+              Download for Mac
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-neutral-100 md:mt-12 w-full mt-6">
+      <div
+        class="md:flex-row md:justify-between container flex flex-col items-center justify-center max-w-6xl p-6 pb-12 mx-auto"
+      >
+        <div class="w-[20%] flex items-center justify-center">
+          <img
+            src="./img/logo.svg"
+            alt="logo image"
+            class="object-cover md:w-[30%] w-[60%]"
+          />
+        </div>
+        <div
+          class="text-zinc-500 md:flex-row md:gap-x-24 flex flex-col flex-wrap flex-1 gap-4 py-8 text-center"
+        >
+          <a href="#" class="footer-link">FAQs</a>
+          <a href="#" class="footer-link">contact us</a>
+          <a href="#" class="footer-link">privacy policy</a>
+          <a href="#" class="footer-link">press kit</a>
+          <a href="#" class="footer-link">install guide</a>
+        </div>
+        <div class="flex flex-row md:justify-center gap-6 md:w-[30%]">
+          <img
+            src="./img/icon-facebook.svg"
+            alt="facebook logo"
+            class="object-cover"
+          />
+          <img
+            src="./img/icon-twitter.svg"
+            alt="twitter logo"
+            class="object-cover"
+          />
+          <img
+            src="./img/icon-instagram.svg"
+            alt="instagram logo"
+            class="object-cover"
           />
         </div>
       </div>
