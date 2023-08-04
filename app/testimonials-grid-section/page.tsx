@@ -7,7 +7,7 @@ const MainPage = () => {
         <div className="lg:grid-cols-4 md:grid-cols-2 lg:px-6 xl:px-24 2xl:px-48 lg:grid-rows-2 grid grid-cols-1 gap-6 px-4 py-12">
           <article className="rounded-xl bg-violet-700 bg-opacity-90 lg:order-1 lg:col-span-2 relative p-6 shadow-md">
             <img
-              src="./images/bg-pattern-quotation.svg"
+              src="/testimonials-grid-section/bg-pattern-quotation.svg"
               alt="background pattern"
               className="right-4 absolute top-0 z-10"
             />
@@ -15,7 +15,7 @@ const MainPage = () => {
             <main className="flex flex-col">
               <header className="text-neutral-50 gap-x-4 flex flex-row items-center">
                 <img
-                  src="./images/image-daniel.jpg"
+                  src="/testimonials-grid-section/image-daniel.jpg"
                   alt="daniel avatar image"
                   className="border-violet-400 object-cover h-10 border-2 rounded-full"
                 />
@@ -53,7 +53,7 @@ const MainPage = () => {
             <main className="flex flex-col">
               <header className="text-neutral-50 gap-x-4 flex flex-row items-center">
                 <img
-                  src="./images/image-jonathan.jpg"
+                  src="/testimonials-grid-section/image-jonathan.jpg"
                   alt="daniel avatar image"
                   className="border-slate-400 object-cover h-10 border-2 rounded-full"
                 />
@@ -84,7 +84,7 @@ const MainPage = () => {
             <main className="flex flex-col">
               <header className="text-neutral-50 gap-x-4 flex flex-row items-center">
                 <img
-                  src="./images/image-jeanette.jpg"
+                  src="/testimonials-grid-section/image-jeanette.jpg"
                   alt="daniel avatar image"
                   className="object-cover h-10 border-2 border-gray-400 rounded-full"
                 />
@@ -115,7 +115,7 @@ const MainPage = () => {
             <main className="flex flex-col">
               <header className="text-neutral-50 gap-x-4 flex flex-row items-center">
                 <img
-                  src="./images/image-patrick.jpg"
+                  src="/testimonials-grid-section/image-patrick.jpg"
                   alt="daniel avatar image"
                   className="border-neutral-400 object-cover h-10 border-2 rounded-full"
                 />
@@ -151,7 +151,7 @@ const MainPage = () => {
             <main className="flex flex-col">
               <header className="text-neutral-50 gap-x-4 flex flex-row items-center">
                 <img
-                  src="./images/image-kira.jpg"
+                  src="/testimonials-grid-section/image-kira.jpg"
                   alt="daniel avatar image"
                   className="border-slate-400 object-cover h-10 border-2 rounded-full"
                 />
