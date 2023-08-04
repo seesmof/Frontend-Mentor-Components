@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Card from "@/components/main/Card";
 import Navbar from "@/components/main/Navbar";
 
