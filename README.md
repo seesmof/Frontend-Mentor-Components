@@ -37,8 +37,7 @@ This repository contains all of my solutions to challenges from Frontend Mentor.
 
 ## Links
 
-- [Live Preview](https://seesmof.github.io/frontend-mentor-solutions/)
-- [Icon](https://www.flaticon.com/)
+- [Live Preview](https://frontend-mentor-solutions-three.vercel.app/)
 
 ## License
 
