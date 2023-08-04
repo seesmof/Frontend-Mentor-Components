@@ -3,6 +3,9 @@ import React from "react";
 import { GoLinkExternal } from "react-icons/go";
 
 const Card = ({ link, name }: { link: string; name: string }) => {
+  const overlayItemsClasses =
+    "group-hover:opacity-100 sm:opacity-0 duration-300";
+
   return (
     <>
       <Link
@@ -14,11 +17,15 @@ const Card = ({ link, name }: { link: string; name: string }) => {
           className="h-60 w-full object-cover object-top duration-[1500ms] group-hover:object-bottom"
           alt=""
         />
-        <div className="absolute inset-0 bg-black flex flex-col items-center justify-center p-4 group-hover:bg-opacity-50 bg-opacity-0 gap-1 duration-300">
-          <h1 className="text-white text-2xl font-bold group-hover:opacity-100 opacity-0 duration-300">
+        <div className="absolute inset-0 bg-black flex flex-col items-center justify-center p-4 group-hover:bg-opacity-50 sm:bg-opacity-0 bg-opacity-50 gap-1 duration-300">
+          <h1
+            className={`${overlayItemsClasses} text-white text-xl sm:text-2xl font-bold`}
+          >
             {name}
           </h1>
-          <p className="text-white/80 flex flex-row items-center group-hover:opacity-100 opacity-0 duration-300">
+          <p
+            className={`${overlayItemsClasses} text-white/80 flex flex-row items-center`}
+          >
             Preview <GoLinkExternal className="ml-2" />
           </p>
         </div>
