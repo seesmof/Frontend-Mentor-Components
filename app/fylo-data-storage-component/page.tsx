@@ -3,31 +3,31 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <div className="min-h-screen bg-center bg-no-repeat bg-cover bg-[url('./img/bg-mobile.png')] sm:bg-[url('./img/bg-desktop.png')] flex items-center justify-center">
+      <div className="min-h-screen bg-center bg-no-repeat bg-cover bg-[url('/fylo-data-storage-component/bg-mobile.png')] sm:bg-[url('/fylo-data-storage-component/bg-desktop.png')] flex items-center justify-center">
         <div className="sm:flex-row xl:max-w-6xl container flex flex-col items-end justify-center w-full gap-6 px-6">
           <div className="bg-indigo-900 flex flex-col w-full sm:w-2/5 sm:py-12 rounded-xl rounded-tr-[8rem] md:px-10 px-6 py-8">
             <div className="flex flex-row gap-2">
-              <img src="./img/logo.svg" alt="" />
+              <img src="/fylo-data-storage-component/logo.svg" alt="" />
             </div>
 
             <div className="flex flex-row w-full gap-3 pt-6">
               <div className="bg-slate-900 rounded-xl flex items-center justify-center">
                 <img
-                  src="./img/icon-document.svg"
+                  src="/fylo-data-storage-component/icon-document.svg"
                   alt=""
                   className="object-cover p-3"
                 />
               </div>
               <div className="bg-slate-900 rounded-xl flex items-center justify-center">
                 <img
-                  src="./img/icon-folder.svg"
+                  src="/fylo-data-storage-component/icon-folder.svg"
                   alt=""
                   className="object-cover p-3"
                 />
               </div>
               <div className="bg-slate-900 rounded-xl flex items-center justify-center">
                 <img
-                  src="./img/icon-upload.svg"
+                  src="/fylo-data-storage-component/icon-upload.svg"
                   alt=""
                   className="object-cover p-3"
                 />

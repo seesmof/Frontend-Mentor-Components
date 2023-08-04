@@ -3,4 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+  .button {
+    @apply bg-gradient-to-r from-[#e942ef] to-[#8838ff] w-3/4 rounded-xl rounded-bl-sm text-neutral-50 flex flex-row justify-between items-center;
+  }
 }
