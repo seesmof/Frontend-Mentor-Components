@@ -3,7 +3,11 @@ import React, { useState } from "react";
 import Card from "./Card";
 import Navbar from "./Navbar";
 
-const Gallery = ({ Projects }: { Projects: any[] }) => {
+interface GalleryProps {
+  Projects: any[];
+}
+
+const Gallery = ({ Projects }: GalleryProps) => {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   return (
