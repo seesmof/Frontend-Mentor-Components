@@ -2,12 +2,12 @@ import { GoLinkExternal } from "react-icons/go";
 import Link from "next/link";
 
 interface CardProps {
-  link: string;
+  href: string;
   name: string;
   isDarkMode: boolean;
 }
 
-const Card = ({ link, name, isDarkMode }: CardProps) => {
+const Card = ({ href: link, name, isDarkMode }: CardProps) => {
   const overlayItemsClasses =
     "group-hover:opacity-100 sm:opacity-0 duration-300";
 

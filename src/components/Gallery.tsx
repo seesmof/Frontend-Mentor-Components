@@ -2,12 +2,9 @@
 import React, { useState } from "react";
 import Card from "./Card";
 import Navbar from "./Navbar";
+import { Project } from "@/app/page";
 
-interface GalleryProps {
-  Projects: any[];
-}
-
-const Gallery = ({ Projects }: GalleryProps) => {
+const Gallery = ({ projects }: { projects: Project[] }) => {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   return (
@@ -22,10 +19,10 @@ const Gallery = ({ Projects }: GalleryProps) => {
         <div className="flex flex-col mx-auto max-w-4xl">
           <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 pt-4">
-            {Projects.map((project) => (
+            {projects.map((project, index) => (
               <Card
-                key={project.name}
-                link={project.link}
+                key={index}
+                href={project.href}
                 name={project.name}
                 isDarkMode={isDarkMode}
               />
