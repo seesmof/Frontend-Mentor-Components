@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+
 import { AiFillGithub } from "react-icons/ai";
-import { BsMoon, BsSun } from "react-icons/bs";
 import { GoLinkExternal } from "react-icons/go";
 
 interface Project {
@@ -43,55 +43,31 @@ const projects: Project[] = [
   },
 ];
 
-export default function Page() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+const githubHref = "https://github.com/seesmof/frontend-mentor-solutions";
 
+export default function Page() {
   return (
     <>
-      <div
-        className={`min-h-screen p-4 md:p-6 ${
-          isDarkMode
-            ? "bg-slate-900 text-slate-100"
-            : "bg-slate-100 text-slate-900"
-        }`}
-      >
-        <div className="flex flex-col mx-auto max-w-4xl">
-          <div
-            className={`flex p-3 rounded-md items-center justify-between ${
-              isDarkMode
-                ? "bg-slate-800"
-                : "bg-inherit shadow-xl shadow-slate-300"
-            }`}
-          >
-            <h2 className="font-bold sm:text-xl">Frontend Mentor</h2>
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setIsDarkMode((isDarkMode) => !isDarkMode)}
-                title="Toggle Dark Mode"
-              >
-                {isDarkMode ? (
-                  <BsSun className="text-xl stroke-[0.2]" />
-                ) : (
-                  <BsMoon className="text-xl stroke-[0.3]" />
-                )}
-              </button>
-              <Link
-                href="https://github.com/seesmof/frontend-mentor-solutions"
-                title="View Source Code on GitHub"
-              >
+      <div className="min-h-screen bg-sky-50">
+        <div className="flex flex-col mx-auto max-w-3xl p-3">
+          {/* Navbar */}
+          <nav className="bg-white rounded-md">
+            <div className="flex justify-between items-center p-3">
+              <h1 className="font-bold hover:underline underline-offset-4 cursor-pointer">
+                <Link href={"/"}>Frontend Pages</Link>
+              </h1>
+              <Link href={githubHref}>
                 <AiFillGithub className="text-2xl" />
               </Link>
             </div>
-          </div>
+          </nav>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 pt-4">
             {projects.map((project, index) => (
               <Link
                 key={index}
                 href={project.href}
-                className={`flex relative flex-col rounded-md overflow-hidden group ${
-                  isDarkMode ? "" : "shadow-xl shadow-slate-300"
-                }`}
+                className="flex relative flex-col rounded-md overflow-hidden group shadow-xl shadow-slate-300"
               >
                 <Image
                   src={`/img/${project.href}.png`}
