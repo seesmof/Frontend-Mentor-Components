@@ -1,5 +1,6 @@
 import { GoLinkExternal } from "react-icons/go";
 import Link from "next/link";
+import Image from "next/image";
 
 interface CardProps {
   href: string;
@@ -7,22 +8,24 @@ interface CardProps {
   isDarkMode: boolean;
 }
 
-const Card = ({ href: link, name, isDarkMode }: CardProps) => {
+const Card = ({ href, name, isDarkMode }: CardProps) => {
   const overlayItemsClasses =
     "group-hover:opacity-100 sm:opacity-0 duration-300";
 
   return (
     <>
       <Link
-        href={link}
+        href={href}
         className={`flex relative flex-col rounded-md overflow-hidden group ${
           isDarkMode ? "" : "shadow-xl shadow-slate-300"
         }`}
       >
-        <img
-          src={`/img/${link}.png`}
-          className="h-60 w-full object-cover object-top duration-[1500ms] group-hover:object-bottom"
-          alt=""
+        <Image
+          src={`/img/${href}.png`}
+          className="h-60 w-full object-cover object-top duration-1500 group-hover:object-bottom"
+          alt="An image of the project."
+          width={800}
+          height={600}
         />
         <div className="absolute inset-0 bg-black flex flex-col items-center justify-center p-4 group-hover:bg-opacity-50 sm:bg-opacity-0 bg-opacity-50 gap-1 duration-300">
           <h1

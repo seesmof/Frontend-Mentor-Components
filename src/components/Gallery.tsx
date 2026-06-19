@@ -1,11 +1,47 @@
 "use client";
-import React, { useState } from "react";
+
+import { useState } from "react";
 import Card from "./Card";
 import Navbar from "./Navbar";
-import { Project } from "@/app/page";
 
-const Gallery = ({ projects }: { projects: Project[] }) => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+interface Project {
+  name: string;
+  href: string;
+}
+
+const projects: Project[] = [
+  {
+    name: "Chat App",
+    href: "chat-app-css-illustration",
+  },
+  {
+    name: "Clipboard Landing Page",
+    href: "clipboard-landing-page",
+  },
+  {
+    name: "Fylo Data Storage",
+    href: "fylo-data-storage-component",
+  },
+  {
+    name: "Product Preview Card",
+    href: "product-preview-card-component",
+  },
+  {
+    name: "QR Code",
+    href: "qr-code-component",
+  },
+  {
+    name: "Testimonials Grid",
+    href: "testimonials-grid-section",
+  },
+  {
+    name: "Newsletter Sign Up Form",
+    href: "newsletter-sign-up-with-success-message-component",
+  },
+];
+
+const Gallery = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   return (
     <>
