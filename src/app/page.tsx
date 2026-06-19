@@ -1,11 +1,7 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 import { AiFillGithub } from "react-icons/ai";
-import { GoLinkExternal } from "react-icons/go";
 
 interface Project {
   name: string;
