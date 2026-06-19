@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const MainPage = () => {
@@ -5,10 +6,12 @@ const MainPage = () => {
     <>
       <section className="w-full bg-center bg-no-repeat bg-cover bg-[url('/clipboard-landing-page/bg-header-mobile.png')] md:bg-[url('/clipboard-landing-page/bg-header-desktop.png')]">
         <div className="text-zinc-600 container flex flex-col items-center justify-center max-w-4xl p-6 py-20 mx-auto text-center">
-          <img
-            src="/clipboard-landing-page/logo.svg"
+          <Image
+            src="/clipboard/logo.svg"
             alt="logo image"
             className="object-cover"
+            width={40}
+            height={40}
           />
           <h1 className="heading md:text-4xl pt-8 text-2xl">
             A history of everything you copy
@@ -59,10 +62,12 @@ const MainPage = () => {
         </div>
       </section>
       <div className="md:flex-row lg:gap-12 md:gap-6 md:max-w-full flex flex-col items-center max-w-4xl p-6 pt-8 pb-20">
-        <img
-          src="/clipboard-landing-page/image-computer.png"
+        <Image
+          src="/clipboard/image-computer.png"
           alt="image of a computer"
           className="md:h-full md:-left-12 md:w-1/2 relative pb-8"
+          width={800}
+          height={600}
         />
         <div className="md:text-left lg:gap-12 flex flex-col max-w-lg gap-6 text-center">
           <div className="flex flex-col">
@@ -95,14 +100,16 @@ const MainPage = () => {
               Access Clipboard anywhere
             </h2>
             <p className="text-zinc-400 md:text-lg pt-4">
-              Whether you're on the go, or at your computer, you can access all
+              Whether you`re on the go, or at your computer, you can access all
               your Clipboard snippets in a few simple clicks.
             </p>
           </header>
-          <img
-            src="/clipboard-landing-page/image-devices.png"
+          <Image
+            src="/clipboard/image-devices.png"
             alt="image of devices"
             className="w-full pt-6"
+            width={800}
+            height={600}
           />
         </div>
       </section>
@@ -114,15 +121,17 @@ const MainPage = () => {
               Supercharge your workflow
             </h2>
             <p className="text-zinc-400 md:text-lg pt-4">
-              We've got the tools to boost your productivity
+              We`ve got the tools to boost your productivity
             </p>
           </header>
           <div className="lg:grid-cols-3 grid items-start grid-cols-1 gap-10 pt-16">
             <div className="flex flex-col items-center justify-center">
-              <img
-                src="/clipboard-landing-page/icon-blacklist.svg"
+              <Image
+                src="/clipboard/icon-blacklist.svg"
                 alt=""
                 className="pb-6"
+                width={100}
+                height={100}
               />
               <h2 className="heading md:text-2xl text-xl">Create blacklists</h2>
               <p className="text-zinc-400 md:text-lg pt-2">
@@ -131,10 +140,12 @@ const MainPage = () => {
               </p>
             </div>
             <div className="flex flex-col items-center justify-center">
-              <img
-                src="/clipboard-landing-page/icon-text.svg"
+              <Image
+                src="/clipboard/icon-text.svg"
                 alt=""
                 className="pb-6"
+                width={100}
+                height={100}
               />
               <h2 className="heading md:text-2xl text-xl">
                 Plain text snippets
@@ -145,10 +156,12 @@ const MainPage = () => {
               </p>
             </div>
             <div className="flex flex-col items-center justify-center">
-              <img
-                src="/clipboard-landing-page/icon-preview.svg"
-                alt=""
+              <Image
+                src="/clipboard/icon-preview.svg"
+                alt="An image of the icon."
                 className="pb-6"
+                width={100}
+                height={100}
               />
               <h2 className="heading md:text-2xl text-xl">Sneak preview</h2>
               <p className="text-zinc-400 md:text-lg pt-2">
@@ -162,30 +175,40 @@ const MainPage = () => {
       <section className="w-full">
         <div className="max-w-7xl container p-6 pb-20 mx-auto text-center">
           <div className="lg:flex-row lg:justify-between flex flex-col items-center justify-center gap-12">
-            <img
-              src="/clipboard-landing-page/logo-google.png"
+            <Image
+              src="/clipboard/logo-google.png"
               alt="google logo"
               className="max-w-xs"
+              width={100}
+              height={100}
             />
-            <img
-              src="/clipboard-landing-page/logo-ibm.png"
+            <Image
+              src="/clipboard/logo-ibm.png"
               alt="ibm logo"
               className="max-w-xs"
+              width={100}
+              height={100}
             />
-            <img
-              src="/clipboard-landing-page/logo-microsoft.png"
+            <Image
+              src="/clipboard/logo-microsoft.png"
               alt="microsoft logo"
               className="max-w-xs"
+              width={100}
+              height={100}
             />
-            <img
-              src="/clipboard-landing-page/logo-hp.png"
+            <Image
+              src="/clipboard/logo-hp.png"
               alt="hp logo"
               className="max-w-xs"
+              width={100}
+              height={100}
             />
-            <img
-              src="/clipboard-landing-page/logo-vector-graphics.png"
+            <Image
+              src="/clipboard/logo-vector-graphics.png"
               alt="vector graphics logo"
               className="max-w-xs"
+              width={100}
+              height={100}
             />
           </div>
         </div>
@@ -198,7 +221,7 @@ const MainPage = () => {
           </h2>
           <p className="text-zinc-400 md:text-lg pt-4">
             Available for free on the App Store. Download for Mac or iOS, sync
-            with iCould and you're ready to start adding to your clipboard.
+            with iCould and you`re ready to start adding to your clipboard.
           </p>
           <div className="md:flex-row md:w-1/2 flex flex-col items-center w-full gap-5 pt-8">
             <div className="group relative w-full">
@@ -230,10 +253,12 @@ const MainPage = () => {
       <section className="bg-neutral-100 md:mt-12 w-full mt-6">
         <div className="md:flex-row md:justify-between container flex flex-col items-center justify-center max-w-6xl p-6 pb-12 mx-auto">
           <div className="w-[20%] flex items-center justify-center">
-            <img
-              src="/clipboard-landing-page/logo.svg"
+            <Image
+              src="/clipboard/logo.svg"
               alt="logo image"
               className="object-cover md:w-[30%] w-[60%]"
+              width={100}
+              height={100}
             />
           </div>
           <div className="text-zinc-500 md:flex-row md:gap-x-24 flex flex-col flex-wrap flex-1 gap-4 py-8 text-center">
@@ -254,20 +279,26 @@ const MainPage = () => {
             </a>
           </div>
           <div className="flex flex-row md:justify-center gap-6 md:w-[30%]">
-            <img
-              src="/clipboard-landing-page/icon-facebook.svg"
+            <Image
+              src="/clipboard/icon-facebook.svg"
               alt="facebook logo"
               className="object-cover"
+              width={30}
+              height={30}
             />
-            <img
-              src="/clipboard-landing-page/icon-twitter.svg"
+            <Image
+              src="/clipboard/icon-twitter.svg"
               alt="twitter logo"
               className="object-cover"
+              width={30}
+              height={30}
             />
-            <img
-              src="/clipboard-landing-page/icon-instagram.svg"
+            <Image
+              src="/clipboard/icon-instagram.svg"
               alt="instagram logo"
               className="object-cover"
+              width={30}
+              height={30}
             />
           </div>
         </div>
